@@ -1,10 +1,9 @@
-import './App.css';
-import { useState } from 'react';
+import { FC, useState } from 'react';
 
 import viteLogo from '/vite.svg';
 import reactLogo from './assets/icons/react.svg';
 
-export const App = () => {
+export const App: FC<{ title?: string }> = ({ title = 'React + Vite + TS --template' }) => {
 	const [ count, setCount ] = useState(0);
 
 	return (
@@ -17,7 +16,7 @@ export const App = () => {
 					<img src={reactLogo} className="logo react" alt="React logo"/>
 				</a>
 			</div>
-			<h1>Vite + React</h1>
+			<h1>{title}</h1>
 			<div className="card">
 				<button onClick={() => setCount((count) => count + 1)}>
 					count is {count}

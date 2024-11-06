@@ -7,7 +7,7 @@ import simpleImportSort from "eslint-plugin-simple-import-sort";
 import stylisticJs from '@stylistic/eslint-plugin-js';
 
 export default tseslint.config(
-  { ignores: [ 'dist' ] },
+  { ignores: [ 'dist', 'reports' ] },
   {
     extends: [
       js.configs.recommended,

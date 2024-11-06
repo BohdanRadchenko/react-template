@@ -2,7 +2,7 @@
 
 - [Description](#description)
 - [Features](#features)
-- [Run](#run)
+- [scripts](#scripts)
 - [File structure](#file-structure)
 - [Dependency](#dependency)
 
@@ -17,33 +17,38 @@ uses [Babel](https://babeljs.io/) for Fast Refresh
 
 This template setup will include following features.
 
-| ✅ | Feature                                                                                                                                                                                 | Branch Name           |
-|---|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------|
-| ✅ | [Generate Vite](https://vitejs.dev/) + [React](https://react.dev/) + [Typescript](https://www.typescriptlang.org/) + [ESLint](https://eslint.org/) + [StyleLint](https://stylelint.io/) | [feat/1/starter]()    |
-| ✅ | [Redux Saga](https://redux-saga.js.org/)                                                                                                                                                | feature/12/react-saga |
-| ✅ | [Vitest](https://vitest.dev/) + [RTL](https://testing-library.com/docs/react-testing-library/intro/)                                                                                    | feature/13/vitest     |
-| ✅ | [Cypress](https://www.cypress.io/)                                                                                                                                                      | feature/13/vitest     |
+| ✅ | Feature                                                                                                                                                                                 | Branch Name                                                                             |
+|---|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------|
+| ✅ | [Generate Vite](https://vitejs.dev/) + [React](https://react.dev/) + [Typescript](https://www.typescriptlang.org/) + [ESLint](https://eslint.org/) + [StyleLint](https://stylelint.io/) | [feat/1/starter](https://github.com/BohdanRadchenko/react-template/tree/feat/1/starter) |
+| ✅ | [Husky](https://typicode.github.io/husky) + [Vitest](https://vitest.dev/) + [RTL](https://testing-library.com/docs/react-testing-library/intro/)                                        | [feat/2/husky](https://github.com/BohdanRadchenko/react-template/tree/feat/2/vitest)    |
 
-## Run
+## Scripts
 
 In the project directory, you can run:
 
-### `yarn dev`
+### Vite scripts
 
-Runs the app in the development mode.<br>
-Open [http://localhost:5100](http://localhost:5100) to view it in the browser.
+```bash
+yarn dev dev                  # runs the app in the development mode
+npm run build                 # build production bundle to 'dist' directly
+npm run preview               # runs the app in the production mode from build out directory
+```
 
-### `yarn build`
+### Test scripts
 
-### `yarn preview`
-
-Runs the app in the prod mode.<br>
-Open [http://localhost:4173](http://localhost:4173) to view it in the browser.
+```bash
+yarn test             # single test run without watch mode.
+yarn test:ui          # run test with code covereage
+yarn test:watch       # Run all test suites but watch for changes and rerun tests when they change
+yarn test:coverage    # single test run with code coverage
+yarn test:prepare     # run test without reported files
+```
 
 ## File structure
 
     .
     ├── ...
+    ├── .husky                # Husky hooks
     ├── dist                  # Compiled files
     ├── src                   # Source files
     │   ├── api               # api config
@@ -71,3 +76,8 @@ Open [http://localhost:4173](http://localhost:4173) to view it in the browser.
 - [Vite static copy](https://www.npmjs.com/package/vite-plugin-static-copy)
 - [Vite tsconfig path](https://www.npmjs.com/package/vite-tsconfig-paths)
 - [ESLint simple import sort](https://github.com/lydell/eslint-plugin-simple-import-sort/)
+- [Husky](https://typicode.github.io/husky)
+- [Vitest](https://vitest.dev/)
+- [jsdom](https://www.npmjs.com/package/jsdom)
+- [React testing lib](https://testing-library.com/docs/react-testing-library/intro/)
+- [Vitest + RTL example](https://www.robinwieruch.de/react-testing-library/)
