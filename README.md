@@ -1,50 +1,73 @@
-# React + TypeScript + Vite
+# React + TypeScript + Vite(Babel) - Template
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- [Description](#description)
+- [Features](#features)
+- [Run](#run)
+- [File structure](#file-structure)
+- [Dependency](#dependency)
 
-Currently, two official plugins are available:
+## Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+> This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules
 
-## Expanding the ESLint configuration
+[@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md)
+uses [Babel](https://babeljs.io/) for Fast Refresh
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Features
 
-- Configure the top-level `parserOptions` property like this:
+This template setup will include following features.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+| ✅ | Feature                                                                                                                                                                                 | Branch Name           |
+|---|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------|
+| ✅ | [Generate Vite](https://vitejs.dev/) + [React](https://react.dev/) + [Typescript](https://www.typescriptlang.org/) + [ESLint](https://eslint.org/) + [StyleLint](https://stylelint.io/) | [feat/1/starter]()    |
+| ✅ | [Redux Saga](https://redux-saga.js.org/)                                                                                                                                                | feature/12/react-saga |
+| ✅ | [Vitest](https://vitest.dev/) + [RTL](https://testing-library.com/docs/react-testing-library/intro/)                                                                                    | feature/13/vitest     |
+| ✅ | [Cypress](https://www.cypress.io/)                                                                                                                                                      | feature/13/vitest     |
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Run
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+In the project directory, you can run:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+### `yarn dev`
+
+Runs the app in the development mode.<br>
+Open [http://localhost:5100](http://localhost:5100) to view it in the browser.
+
+### `yarn build`
+
+### `yarn preview`
+
+Runs the app in the prod mode.<br>
+Open [http://localhost:4173](http://localhost:4173) to view it in the browser.
+
+## File structure
+
+    .
+    ├── ...
+    ├── dist                  # Compiled files
+    ├── src                   # Source files
+    │   ├── api               # api config
+    │   │   └── services      # api services
+    │   ├── assets            # assets
+    │   │   ├── icons         # assets icons *.svg
+    │   │   └── ..            #
+    │   ├── components        # 
+    │   ├── constants         #
+    │   ├── helpers           # 
+    │   ├── hooks             #
+    │   ├── interfaces        #  
+    │   ├── modules           # business logic
+    │   ├── providers         #
+    │   ├── main.ts           # js app entry point
+    │   └── ..                # 
+    ├── index.html            # html app entry point
+    └── .. 
+
+## Dependency
+
+- [vite](https://vite.dev/guide/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vite svgr](https://www.npmjs.com/package/vite-plugin-svgr)
+- [Vite static copy](https://www.npmjs.com/package/vite-plugin-static-copy)
+- [Vite tsconfig path](https://www.npmjs.com/package/vite-tsconfig-paths)
+- [ESLint simple import sort](https://github.com/lydell/eslint-plugin-simple-import-sort/)
