@@ -1,2 +1,2 @@
 yarn tsc -b
-yarn test --reporter=default
+yarn test --reporter=default --coverage.reporters=text
