@@ -42,6 +42,7 @@ Open [http://localhost:4173](http://localhost:4173) to view it in the browser.
 
     .
     ├── ...
+    ├── .husky                # Husky hooks
     ├── dist                  # Compiled files
     ├── src                   # Source files
     │   ├── api               # api config
