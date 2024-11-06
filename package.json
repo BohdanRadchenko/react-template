@@ -10,10 +10,10 @@
     "preview": "vite preview",
     "prepare": "husky",
     "test": "vitest run",
-    "test:prepare": "vitest run --reporter=default --coverage.reportsDirectory= --coverage.reporter=text",
     "test:ui": "vitest --ui",
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
+    "test:prepare": "vitest run --reporter=default --coverage.reportsDirectory= --coverage.reporter=text",
     "lint": "eslint --report-unused-disable-directives --max-warnings 0 .",
     "lint:fix": "yarn lint --fix",
     "lint:report": "yarn lint --format html --output-file ./reports/eslint/index.html"

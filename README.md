@@ -41,6 +41,7 @@ yarn test             # single test run without watch mode.
 yarn test:ui          # run test with code covereage
 yarn test:watch       # Run all test suites but watch for changes and rerun tests when they change
 yarn test:coverage    # single test run with code coverage
+yarn test:prepare     # run test without reported files
 ```
 
 ## File structure
