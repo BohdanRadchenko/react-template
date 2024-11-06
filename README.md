@@ -20,7 +20,7 @@ This template setup will include following features.
 | ✅ | Feature                                                                                                                                                                                 | Branch Name                                                                             |
 |---|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------|
 | ✅ | [Generate Vite](https://vitejs.dev/) + [React](https://react.dev/) + [Typescript](https://www.typescriptlang.org/) + [ESLint](https://eslint.org/) + [StyleLint](https://stylelint.io/) | [feat/1/starter](https://github.com/BohdanRadchenko/react-template/tree/feat/1/starter) |
-| ✅ | [Husky](https://typicode.github.io/husky)                                                                                                                                               | [feat/2/husky](https://github.com/BohdanRadchenko/react-template/tree/feat/2/husky)     |
+| ✅ | [Husky](https://typicode.github.io/husky) + [Vitest](https://vitest.dev/) + [RTL](https://testing-library.com/docs/react-testing-library/intro/)                                        | [feat/2/husky](https://github.com/BohdanRadchenko/react-template/tree/feat/2/vitest)    |
 
 ## Run
 
@@ -71,3 +71,7 @@ Open [http://localhost:4173](http://localhost:4173) to view it in the browser.
 - [Vite tsconfig path](https://www.npmjs.com/package/vite-tsconfig-paths)
 - [ESLint simple import sort](https://github.com/lydell/eslint-plugin-simple-import-sort/)
 - [Husky](https://typicode.github.io/husky)
+- [Vitest](https://vitest.dev/)
+- [jsdom](https://www.npmjs.com/package/jsdom)
+- [React testing lib](https://testing-library.com/docs/react-testing-library/intro/)
+- [Vitest + RTL example](https://www.robinwieruch.de/react-testing-library/)
