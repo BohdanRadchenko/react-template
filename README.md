@@ -17,12 +17,9 @@ uses [Babel](https://babeljs.io/) for Fast Refresh
 
 This template setup will include following features.
 
-| ✅ | Feature                                                                                                                                                                                 | Branch Name           |
-|---|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------|
-| ✅ | [Generate Vite](https://vitejs.dev/) + [React](https://react.dev/) + [Typescript](https://www.typescriptlang.org/) + [ESLint](https://eslint.org/) + [StyleLint](https://stylelint.io/) | [feat/1/starter]()    |
-| ✅ | [Redux Saga](https://redux-saga.js.org/)                                                                                                                                                | feature/12/react-saga |
-| ✅ | [Vitest](https://vitest.dev/) + [RTL](https://testing-library.com/docs/react-testing-library/intro/)                                                                                    | feature/13/vitest     |
-| ✅ | [Cypress](https://www.cypress.io/)                                                                                                                                                      | feature/13/vitest     |
+| ✅ | Feature                                                                                                                                                                                 | Branch Name                                                                             |
+|---|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------|
+| ✅ | [Generate Vite](https://vitejs.dev/) + [React](https://react.dev/) + [Typescript](https://www.typescriptlang.org/) + [ESLint](https://eslint.org/) + [StyleLint](https://stylelint.io/) | [feat/1/starter](https://github.com/BohdanRadchenko/react-template/tree/feat/1/starter) |
 
 ## Run
 
