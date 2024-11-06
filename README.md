@@ -20,6 +20,7 @@ This template setup will include following features.
 | ✅ | Feature                                                                                                                                                                                 | Branch Name                                                                             |
 |---|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------|
 | ✅ | [Generate Vite](https://vitejs.dev/) + [React](https://react.dev/) + [Typescript](https://www.typescriptlang.org/) + [ESLint](https://eslint.org/) + [StyleLint](https://stylelint.io/) | [feat/1/starter](https://github.com/BohdanRadchenko/react-template/tree/feat/1/starter) |
+| ✅ | [Husky](https://typicode.github.io/husky)                                                                                                                                               | [feat/2/husky](https://github.com/BohdanRadchenko/react-template/tree/feat/2/husky)     |
 
 ## Run
 
@@ -68,3 +69,4 @@ Open [http://localhost:4173](http://localhost:4173) to view it in the browser.
 - [Vite static copy](https://www.npmjs.com/package/vite-plugin-static-copy)
 - [Vite tsconfig path](https://www.npmjs.com/package/vite-tsconfig-paths)
 - [ESLint simple import sort](https://github.com/lydell/eslint-plugin-simple-import-sort/)
+- [Husky](https://typicode.github.io/husky)
