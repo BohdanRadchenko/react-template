@@ -1,10 +1,15 @@
+import { StrictMode } from 'react';
+import { RouterProvider } from "react-router-dom";
+
 import RootProvider from "@/providers";
-import App from './App';
+import router from "@/router";
 
 export const Root = () => {
 	return (
-		<RootProvider>
-			<App/>
-		</RootProvider>
+		<StrictMode>
+			<RootProvider>
+				<RouterProvider router={router}/>
+			</RootProvider>
+		</StrictMode>
 	);
 };

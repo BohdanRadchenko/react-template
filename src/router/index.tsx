@@ -1,0 +1,1 @@
+export { browserRouter, browserRouter as default,routes } from './router.tsx';

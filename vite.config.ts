@@ -37,7 +37,6 @@ export default defineConfig({
 			'default',
 			[ 'html', { outputFile: './reports/tests/unit/html/index.html' } ],
 		],
-		dir: './src',
 		environment: 'jsdom',
 		globals: true,
 		setupFiles: [ './src/vitest-setup.ts' ],

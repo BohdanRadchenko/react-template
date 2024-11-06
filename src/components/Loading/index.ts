@@ -1,0 +1,1 @@
+export { Loading as default, Loading } from './Loading';

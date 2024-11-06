@@ -17,10 +17,10 @@ uses [Babel](https://babeljs.io/) for Fast Refresh
 
 This template setup will include following features.
 
-| ✅ | Feature                                                                                                                                                                                 | Branch Name                                                                             |
-|---|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------|
-| ✅ | [Generate Vite](https://vitejs.dev/) + [React](https://react.dev/) + [Typescript](https://www.typescriptlang.org/) + [ESLint](https://eslint.org/) + [StyleLint](https://stylelint.io/) | [feat/1/starter](https://github.com/BohdanRadchenko/react-template/tree/feat/1/starter) |
-| ✅ | [Husky](https://typicode.github.io/husky) + [Vitest](https://vitest.dev/) + [RTL](https://testing-library.com/docs/react-testing-library/intro/)                                        | [feat/2/husky](https://github.com/BohdanRadchenko/react-template/tree/feat/2/vitest)    |
+- [feat/1/starter](https://github.com/BohdanRadchenko/react-template/tree/feat/1/starter) - Generate Vite + React +
+  Typescript + ESLint + StyleLint
+- [feat/2/vitest](https://github.com/BohdanRadchenko/react-template/tree/feat/2/vitest) Husky + Vitest + RTL
+- [feat/3/router](https://github.com/BohdanRadchenko/react-template/tree/feat/3/router) React Router
 
 ## Scripts
 
@@ -39,9 +39,17 @@ npm run preview               # runs the app in the production mode from build o
 ```bash
 yarn test             # single test run without watch mode.
 yarn test:ui          # run test with code covereage
-yarn test:watch       # Run all test suites but watch for changes and rerun tests when they change
+yarn test:dev         # Run all test suites but watch for changes and rerun tests when they change
 yarn test:coverage    # single test run with code coverage
 yarn test:prepare     # run test without reported files
+```
+
+### ESLint scripts
+
+```bash
+yarn lint             # single test run without watch mode.
+yarn lint:fix          # run test with code covereage
+yarn lint:report       # Run all test suites but watch for changes and rerun tests when they change
 ```
 
 ## File structure
@@ -62,7 +70,9 @@ yarn test:prepare     # run test without reported files
     │   ├── hooks             #
     │   ├── interfaces        #  
     │   ├── modules           # business logic
+    │   ├── pages             # router pages
     │   ├── providers         #
+    │   ├── router            # router entry point
     │   ├── main.ts           # js app entry point
     │   └── ..                # 
     ├── index.html            # html app entry point
@@ -81,3 +91,4 @@ yarn test:prepare     # run test without reported files
 - [jsdom](https://www.npmjs.com/package/jsdom)
 - [React testing lib](https://testing-library.com/docs/react-testing-library/intro/)
 - [Vitest + RTL example](https://www.robinwieruch.de/react-testing-library/)
+- [react router dom](https://reactrouter.com/en/main/start/overview)
