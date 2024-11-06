@@ -2,7 +2,7 @@
 
 - [Description](#description)
 - [Features](#features)
-- [Run](#run)
+- [scripts](#scripts)
 - [File structure](#file-structure)
 - [Dependency](#dependency)
 
@@ -22,21 +22,26 @@ This template setup will include following features.
 | ✅ | [Generate Vite](https://vitejs.dev/) + [React](https://react.dev/) + [Typescript](https://www.typescriptlang.org/) + [ESLint](https://eslint.org/) + [StyleLint](https://stylelint.io/) | [feat/1/starter](https://github.com/BohdanRadchenko/react-template/tree/feat/1/starter) |
 | ✅ | [Husky](https://typicode.github.io/husky) + [Vitest](https://vitest.dev/) + [RTL](https://testing-library.com/docs/react-testing-library/intro/)                                        | [feat/2/husky](https://github.com/BohdanRadchenko/react-template/tree/feat/2/vitest)    |
 
-## Run
+## Scripts
 
 In the project directory, you can run:
 
-### `yarn dev`
+### Vite scripts
 
-Runs the app in the development mode.<br>
-Open [http://localhost:5100](http://localhost:5100) to view it in the browser.
+```bash
+yarn dev dev                  # runs the app in the development mode
+npm run build                 # build production bundle to 'dist' directly
+npm run preview               # runs the app in the production mode from build out directory
+```
 
-### `yarn build`
+### Test scripts
 
-### `yarn preview`
-
-Runs the app in the prod mode.<br>
-Open [http://localhost:4173](http://localhost:4173) to view it in the browser.
+```bash
+yarn test             # single test run without watch mode.
+yarn test:ui          # run test with code covereage
+yarn test:watch       # Run all test suites but watch for changes and rerun tests when they change
+yarn test:coverage    # single test run with code coverage
+```
 
 ## File structure
 

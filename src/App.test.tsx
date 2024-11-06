@@ -6,9 +6,7 @@ describe('App', () => {
 	it('renders headline', () => {
 		const title = 'React + Vite test title';
 		render(<App title={title}/>);
-
-		screen.debug();
-
+		
 		expect(screen.getByText(title)).toBeInTheDocument();
 	});
 });
