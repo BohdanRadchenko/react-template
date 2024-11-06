@@ -1,2 +1,2 @@
 yarn tsc -b
-yarn test
+yarn test --reporter=default
