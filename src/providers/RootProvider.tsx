@@ -1,9 +1,11 @@
-import { FC, PropsWithChildren, StrictMode } from "react";
+import { FC, PropsWithChildren } from "react";
+
+import { ThemeProvider } from "./ThemeProvider.tsx";
 
 export const RootProvider: FC<PropsWithChildren> = ({ children }) => {
 	return (
-		<StrictMode>
+		<ThemeProvider>
 			{children}
-		</StrictMode>
+		</ThemeProvider>
 	);
 };

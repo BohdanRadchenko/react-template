@@ -21,6 +21,7 @@ This template setup will include following features.
   Typescript + ESLint + StyleLint
 - [feat/2/vitest](https://github.com/BohdanRadchenko/react-template/tree/feat/2/vitest) Husky + Vitest + RTL
 - [feat/3/router](https://github.com/BohdanRadchenko/react-template/tree/feat/3/router) React Router
+- [feat/4/materal](https://github.com/BohdanRadchenko/react-template/tree/feat/4/materal) Material UI theme provider
 
 ## Scripts
 
@@ -73,6 +74,7 @@ yarn lint:report       # Run all test suites but watch for changes and rerun tes
     │   ├── pages             # router pages
     │   ├── providers         #
     │   ├── router            # router entry point
+    │   ├── theme             # material theme
     │   ├── main.ts           # js app entry point
     │   └── ..                # 
     ├── index.html            # html app entry point
@@ -92,3 +94,4 @@ yarn lint:report       # Run all test suites but watch for changes and rerun tes
 - [React testing lib](https://testing-library.com/docs/react-testing-library/intro/)
 - [Vitest + RTL example](https://www.robinwieruch.de/react-testing-library/)
 - [react router dom](https://reactrouter.com/en/main/start/overview)
+- [mui](https://mui.com/material-ui/getting-started/)
