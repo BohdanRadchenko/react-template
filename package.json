@@ -13,7 +13,7 @@
     "test:ui": "vitest --ui",
     "test:dev": "vitest",
     "test:coverage": "vitest run --coverage",
-    "test:prepare": "vitest run --reporter=default --coverage.reportsDirectory= --coverage.reporter=text",
+    "test:prepare": "vitest run --reporter=default --no-coverage.enabled",
     "lint": "eslint --report-unused-disable-directives --max-warnings 0 .",
     "lint:fix": "yarn lint --fix",
     "lint:report": "yarn lint --format html --output-file ./reports/eslint/index.html"
